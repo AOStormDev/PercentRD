@@ -1,7 +1,7 @@
-import random
-def Random(percent: int):
-    r = random.randint(0, 100)
+from random import randint
+def random(percent: int):
+    r = randint(0, 100)
     if r <= percent:
-        return "a"
+        return True
     else:
-        return "b"
+        return False
